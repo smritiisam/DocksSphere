@@ -10,6 +10,7 @@ const generateToken = (userId, tenantId, role) => {
 
 // Register new user
 export const register = async (req, res) => {
+  console.log("Register controller called");
   try {
     const { email, password, role = "viewer", tenantId } = req.body;
 
